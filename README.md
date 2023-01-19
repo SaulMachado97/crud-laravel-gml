@@ -12,6 +12,8 @@
 Ejecuta los siguientes comandos
 
 ```
+** docker run --rm -v “$(pwd)”:/app composer install **
+
 docker-compose up --build -d
 docker-compose exec app php artisan optimize
 docker-compose exec app php artisan key:generate
