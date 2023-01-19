@@ -29,6 +29,10 @@ docker-compose exec app php artisan migrate
 docker-compose exec app php artisan migrate:fresh --seed --seeder=CategoriasSeeder
 ```
 
+** Nota **
+Hay un archivo comprimido(.zip) que se llama environment.zip en donde esta el archivo .env configurado para la ejecucion del proyecto.
+
+
 
 ## Learning Laravel
 
