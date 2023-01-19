@@ -11,9 +11,19 @@
 
 Ejecuta los siguientes comandos
 
+Para Linux o Mac:
 ```
-** docker run --rm -v “$(pwd)”:/app composer install **
+docker run --rm -v “$(pwd)”:/app composer install
+```
 
+Si usas Windows, mejor este:
+```
+docker run --rm -v ${pwd}:/app composer install
+```
+
+Ahora si a correr: 
+
+```
 docker-compose up --build -d
 docker-compose exec app php artisan optimize
 docker-compose exec app php artisan key:generate
