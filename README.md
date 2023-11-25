@@ -16,6 +16,13 @@ Para Linux o Mac:
 docker run --rm -v “$(pwd)”:/app composer install
 ```
 
+En Caso de que no funcione usar este
+```
+docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  composer install
+```
+
 Si usas Windows, mejor este:
 ```
 docker run --rm -v ${pwd}:/app composer install
